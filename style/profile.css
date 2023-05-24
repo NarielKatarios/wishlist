@@ -1,0 +1,41 @@
+
+.profile {
+  display: flex;
+  align-items: flex-end;
+
+}
+
+.profile__avatar {
+  width: 100%;
+  max-width: 437px;
+  border-radius: 50%;
+  margin-right: 107px;
+}
+.profile__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 78px;
+  align-items: flex-start;
+}
+
+.profile__fullname {
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.profile__birthday {
+  font-size: 38px;
+  margin-bottom: 44px;
+}
+
+.profile__edit {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+}
+
+.profile__edit-icon {
+  margin-right: 7px;
+}
