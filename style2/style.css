@@ -1,49 +1,56 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
-    min-width: 320px;
-    min-height: 100vh;
-    font-family: Roboto, sans-serif;
-    font-weight: 400;
-    background: #365aba;
-    color: #ffffff
-    ;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  background: #365ABA;
+  color: #FFFFFF;
 }
 
-img, svg {
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
 }
 
 button {
-    padding: 0;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    font: inherit;
-    color: inherit;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font: inherit;
+  color: inherit;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
   margin: 0;
 }
 
@@ -69,19 +76,18 @@ fieldset {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-
 }
 
 .btn {
   padding: 10px 20px;
   background: #FFFFFF;
   border-radius: 15px;
-  font-size: 24px;
+  font-size: 34px;
   text-transform: capitalize;
   color: #365ABA;
 }
 
-.btn--castling {
+.btn_castling {
   background: #365ABA;
   color: #FFFFFF;
 }
@@ -116,10 +122,12 @@ fieldset {
   .container {
     padding: 0 16px;
   }
+
   .btn {
     font-size: 20px;
   }
-  .btn--castling {
+
+  .btn_castling {
     font-size: 24px;
   }
 }
