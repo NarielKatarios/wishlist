@@ -1,7 +1,7 @@
-import { API_URL } from "./const";
-import { createElement } from "./helper";
-import { auth, router } from "./index";
-import { getUser } from "./service";
+import { API_URL } from "./const.js";
+import { createElement } from "./helper.js";
+import { auth, router } from "./index.js";
+import { getUser } from "./service.js";
 
 
 export const createWishlist = async pageLogin => {
@@ -29,7 +29,7 @@ export const createWishlist = async pageLogin => {
   const avatar = createElement('img', {
     className: 'profile__avatar',
     src: 'img/avatar.png',
-    alt: 'Фото Иван Петров'б
+    alt: 'Фото Иван Петров',
   });
 
   const content = createElement('div', {

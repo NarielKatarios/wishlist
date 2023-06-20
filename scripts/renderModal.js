@@ -1,4 +1,4 @@
-import { createElement, scrollController } from "./helper";
+import { createElement, scrollController } from "./helper.js";
 
 export const renderModal = ({title, description, btnSubmit, submitHandler}) => {
   const modal = createElement('div', {

@@ -1,45 +1,16 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wishlist - список желаний</title>
+import { getCurrentDateTime } from "./utils.js";
 
-    <link rel="stylesheet" href="style/index.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="scripts/director.min.js" defer></script>
-    <script src="scripts/index.js" type="module"></script>
-    <script src="scripts/widget.js" type="module"></script>
-</head>
-<body class="body">
-    <header class="header">
-      <div class="container header__container">
-        <a href="/">
-          <img class="header__logo" src="img/logo.svg" alt="логотип wishlist  в виде буквы W">
-        </a>
-        
-        <nav class="header__nav nav">
-
-        </nav>
-
-
-      </div>
-    </header>
-
-    <main class="app">
-      
-    </main>
-
-<div id="app"></div>
-
-
-    <!-- <div class="widget">
-      <div class="widget__today">
+export const renderWidgetToday = (widget) => {
+  const currentDateTime = getCurrentDateTime();
+  
+  widget.insertAdjacentHTML(
+    'beforeend',
+    `
+    <div class="widget__today">
         <div class="widget__date-block">
-          <p class="widget__date">20 июн 2023</p>
-          <p class="widget__time">09:00</p>
-          <p class="widget__day">вторник</p>
+          <p class="widget__date">${currentDateTime.dayOfMonth} ${currentDateTime.month}  ${currentDateTime.year}</p>
+          <p class="widget__time">${currentDateTime.hours}:${currentDateTime.hours}</p>
+          <p class="widget__day">${currentDateTime.dayOfWeek}</p>
         </div>
         <div class="widget__icon">
           <img class="widget__img" src="./icon/01d.svg" alt="Погода">
@@ -54,8 +25,15 @@
           <p class="widget__temp-small">18.8 °C</p>
         </div>
       </div>
-  
-      <div class="widget__other">
+    `
+  )
+};
+
+export const renderWidgetOther = (widget) => {
+  widget.insertAdjacentHTML(
+    'beforeend',
+    `
+    <div class="widget__other">
         <div class="widget__wind">
           <p class="widget__wind-title">Ветер</p>
           <p class="widget__wind-speed">3.94 м/с</p>
@@ -73,7 +51,15 @@
           <p class="widget__pressure-text">мм рт.ст.</p>
         </div>
       </div>
-      <ul class="widget__forecast">
+    `
+  )
+};
+
+export const renderWidgetForecast = (widget) => {
+  widget.insertAdjacentHTML(
+    'beforeend',
+    `
+    <ul class="widget__forecast">
         <li class="widget__day-item">
           <p class="widget__day-text">ср</p>
           <img class="widget__day-img" src="./icon/02d.svg" alt="Погода">
@@ -100,6 +86,6 @@
           <p class="widget__day-temp">17.3°/11.2°</p>
         </li>
       </ul>
-    </div> -->
-</body>
-</html>
+    `
+  )
+};
