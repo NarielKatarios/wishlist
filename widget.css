@@ -9,7 +9,8 @@
   max-width: 410px;
   min-height: 300px;
   padding: 5px;
-  border-radius: 12px
+  border-radius: 12px;
+  color: black;
 }
 
 .widget * {
@@ -150,7 +151,7 @@
 
 .widget__forecast {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .widget__day-item {
